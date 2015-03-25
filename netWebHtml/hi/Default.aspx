@@ -8,8 +8,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="htmlBody" runat="server">
     <div id="viewport">
     <div id="homepage">
-					<div id="top">dddd</div>
-					<div id="bottom">dddd</div>
+					<div id="top"></div>
+					<div id="bottom"></div>
 					<h1>JOINT</h1>
 				</div>
         <div id="contact">
