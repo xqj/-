@@ -1,0 +1,4 @@
+D:\MyProject\githubp\webhtml\netWebHtml\r\bin\r.dll
+D:\MyProject\githubp\webhtml\netWebHtml\r\bin\r.pdb
+D:\MyProject\githubp\webhtml\netWebHtml\r\obj\Debug\r.dll
+D:\MyProject\githubp\webhtml\netWebHtml\r\obj\Debug\r.pdb
