@@ -5,17 +5,17 @@
     <link href="http://r.xieqj.cn/hi/default.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="htmlBody" runat="server">
-    <div id="pageWrap">
-        <div id="company">
+    <div id="viewport">
+        <div id="contact">
             <div id="contact-header">
                 <h2>
-                    <a href="#company"><span>公司</span></a></h2>
+                    <a href="#contact"><span>企业无人化</span></a></h2>
             </div>
         </div>
-        <div id="me">
+        <div id="us">
             <div id="us-header">
                 <h2>
-                    <a href="#me"><span>ME</span></a></h2>
+                    <a href="#us"><span>US</span></a></h2>
             </div>
         </div>
     </div>

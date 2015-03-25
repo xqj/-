@@ -54,6 +54,7 @@
     <Content Include="Default.aspx" />
     <Content Include="HTMLPage1.htm" />
     <Content Include="Index.aspx" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -61,6 +62,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="副本 HTMLPage1.htm" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.Master.cs">
