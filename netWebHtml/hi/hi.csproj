@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,18 +61,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="9be946c4-49f1-405d-b8c1-44caaa56cba0.js" />
-    <Content Include="bottom.jpg" />
     <Content Include="Default.aspx" />
-    <Content Include="HTMLPage1.htm" />
     <Content Include="Index.aspx" />
-    <Content Include="joint.js" />
-    <Content Include="jquery.address.js" />
-    <Content Include="jquery.mousewheel.min.js" />
-    <Content Include="jquery172.js" />
-    <Content Include="ScrollBar.js" />
-    <Content Include="style.css" />
-    <Content Include="top.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
