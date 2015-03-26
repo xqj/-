@@ -387,29 +387,6 @@ ul.social li {
 }
 
 /*---------------------------------------------*/
-/* Map
-/*---------------------------------------------*/
-.map {
-	position: absolute;
-	height: 50%;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-	border-width: 1px 0 0 0;
-	border-style: solid;
-	border-color: #525252;
-	overflow: hidden;
-}
-
-.map p {
-	display: none;
-}
-
-.small .map {
-	display: none;
-}
-
-/*---------------------------------------------*/
 /* Us
 /*---------------------------------------------*/
 #us {

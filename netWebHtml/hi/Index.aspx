@@ -7,54 +7,68 @@
 </asp:Content>
 <asp:Content ID="pageBody" ContentPlaceHolderID="htmlBody" runat="server">
     <div id="viewWrap">
+    <div id="nextPage"></div>
         <div id="me">
             me</div>
         <div id="skill">
-        <div id="skillleft">
-        <div id="topbutton">pre</div>
-        <div id="ulWrap">
-         <ul>
-                <li>
-                    <img  src="http://r.xieqj.cn/imgs/hi/ak47.jpg"/>
-                    <h6>
-                        技能</h6>
-                    <p>
-                        说明</p>                   
-                </li>
-                 <li>
-                    <img  src="http://r.xieqj.cn/imgs/hi/ak47.jpg"/>
-                    <h6>
-                        技能</h6>
-                    <p>
-                        说明</p>                   
-                </li>
-                 <li>
-                    <img  src="http://r.xieqj.cn/imgs/hi/ak47.jpg"/>
-                    <h6>
-                        技能</h6>
-                    <p>
-                        说明</p>                   
-                </li>
-                 <li>
-                    <img  src="http://r.xieqj.cn/imgs/hi/ak47.jpg"/>
-                    <h6>
-                        技能</h6>
-                    <p>
-                        说明</p>                   
-                </li>
-                 <li>
-                    <img  src="http://r.xieqj.cn/imgs/hi/ak47.jpg"/>
-                    <h6>
-                        技能</h6>
-                    <p>
-                        说明</p>                   
-                </li>
-            </ul>
+            <div id="skillleft">
+                <div id="topbutton">
+                    pre</div>
+                <div id="ulWrap">
+                    <ul>
+                        <li data-title="" data-content="" data-id="" id="skill">
+                            <img src="http://r.xieqj.cn/imgs/hi/ak47.jpg" />
+                            <h6>
+                                技能</h6>
+                            <p>
+                                说明</p>
+                        </li>
+                         <li data-title="" data-content="" data-id="" id="Li1">
+                            <img src="http://r.xieqj.cn/imgs/hi/m16.jpg" />
+                            <h6>
+                                技能</h6>
+                            <p>
+                                说明</p>
+                        </li>
+                         <li data-title="" data-content="" data-id="" id="Li2">
+                            <img src="http://r.xieqj.cn/imgs/hi/rpg.jpg" />
+                            <h6>
+                                技能</h6>
+                            <p>
+                                说明</p>
+                        </li>
+                         <li data-title="" data-content="" data-id="" id="Li3">
+                            <img src="http://r.xieqj.cn/imgs/hi/mortar.jpg" />
+                            <h6>
+                                技能</h6>
+                            <p>
+                                说明</p>
+                        </li>
+                        <li data-title="" data-content="" data-id="" id="Li4">
+                            <img src="http://r.xieqj.cn/imgs/hi/gun.jpg" />
+                            <h6>
+                                技能</h6>
+                            <p>
+                                说明</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="bottomButton">
+                    next</div>
             </div>
-            <div id="bottomButton">next</div>
-        </div>
-         <div id="skillright"></div>
-           
+            <div id="skillright">
+                <div id="content">
+                    <h3>标题
+                    </h3>
+                    <p>描述
+                    </p>
+                    <h4>相关项目
+                    </h4>
+                    <ul>
+                        <li><a href="http://www.github.com">project</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="project">
             project</div>

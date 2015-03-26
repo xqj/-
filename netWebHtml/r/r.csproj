@@ -66,8 +66,13 @@
     <Content Include="css\hi\default.css" />
     <Content Include="css\hi\index.css" />
     <Content Include="css\hi\Indexl.css" />
+    <Content Include="imgs\hi\ak47.jpg" />
     <Content Include="imgs\hi\bottom.jpg" />
+    <Content Include="imgs\hi\gun.jpg" />
     <Content Include="imgs\hi\keyboard_back.png" />
+    <Content Include="imgs\hi\m16.jpg" />
+    <Content Include="imgs\hi\mortar.jpg" />
+    <Content Include="imgs\hi\rpg.jpg" />
     <Content Include="imgs\hi\top.jpg" />
     <Content Include="js\hi\index.js" />
     <Content Include="js\hi\joint.js" />
