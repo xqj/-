@@ -7,16 +7,16 @@
 </asp:Content>
 <asp:Content ID="pageBody" ContentPlaceHolderID="htmlBody" runat="server">
     <div id="viewWrap">
-    <div id="nextPage"></div>
-        <div id="me">
-            me</div>
-        <div id="skill">
+    <div id="nextPage" current="1"><a href="###">NEXT</a></div>
+        <div id="me" class="pageContent">
+           </div>
+        <div id="skill" class="pageContent">
             <div id="skillleft">
                 <div id="topbutton">
                     pre</div>
                 <div id="ulWrap">
                     <ul>
-                        <li data-title="" data-content="" data-id="" id="skill">
+                        <li data-title="" data-content="" data-id="" id="skill1">
                             <img src="http://r.xieqj.cn/imgs/hi/ak47.jpg" />
                             <h6>
                                 技能</h6>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div id="project">
+        <div id="project" class="pageContent">
             project</div>
     </div>
 </asp:Content>

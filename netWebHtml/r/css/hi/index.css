@@ -11,6 +11,17 @@
 	width: 100%;
 	overflow:hidden;
 }
+#nextPage
+{
+    position: absolute;
+    overflow: hidden;
+    width: 120px;
+    height: 40px;
+    left: 48%;
+    right: auto;
+    top: 94%;
+    z-index: 99;
+}
 #me
 {
     height: 100%;
@@ -21,11 +32,14 @@
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     background-attachment: fixed;
-    opacity:0.8;
-	filter:"alpha(opacity=80)";
-    }
+    opacity: 0.8;
+    filter: "alpha(opacity=80)";
+    vertical-align: middle;
+    text-align: center;
+}
 #skill
 {
+    display: none;
     height: 100%;
     width: 100%;
     overflow: hidden;
