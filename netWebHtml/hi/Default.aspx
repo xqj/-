@@ -82,7 +82,7 @@
             <div id="us">
                 <div id="us-header">
                     <h2>
-                        <a href="#us"><span>About ME</span></a></h2>
+                        <a href="#us"><span>US</span></a></h2>
                 </div>
                 <div id="us-nav">
                     <ul>

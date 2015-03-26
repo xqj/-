@@ -1,4 +1,4 @@
-var JOINT = (typeof JOINT === "undefined") ? {} : JOINT;
+﻿var JOINT = (typeof JOINT === "undefined") ? {} : JOINT;
 
 JOINT.MainView = function () {
 	"use strict";
@@ -40,7 +40,7 @@ JOINT.MainView = function () {
 
 	this.hideLocations = function (hash) {
 		if (hash === undefined) {
-			$('#contact-header span').removeClass('active').text("CONTACT");
+		    $('#contact-header span').removeClass('active').text("企业无人化");
 		}
 		var scope = this;
 		$('#contact').animate({'width': '50%'}, 500, function () {});
@@ -56,7 +56,7 @@ JOINT.MainView = function () {
 				this.address.title(this.originalTitle);
 				this.originalWordPath = hash.substring(3);
 				if (this.originalWordPath === "contact") {
-					this.originalWord = "CONTACT";
+				    this.originalWord = "企业无人化";
 					this.showLocations();
 					if (this.isiDevice) {
 						$('#contact-header span').text("BACK");
@@ -80,7 +80,7 @@ JOINT.MainView = function () {
 				this.address.title(this.originalTitle);
 				if ($(e.currentTarget).hasClass('active')) {
 					this.address.path('');
-					$('#contact-header span').removeClass('active').text("CONTACT");
+					$('#contact-header span').removeClass('active').text("企业无人化");
 					this.hideLocations();
 				} else {
 					this.address.path('contact');
@@ -354,90 +354,10 @@ JOINT.MainView = function () {
 		}
 	};
 
-	this.founderCheck = function () {
-		if (this.oldPath === "/damoncollins") {
-			$("#founders-blog a").eq(0).text("DAMON COLLINS");
-		} else if (this.oldPath === "/richardexon") {
-			$("#founders-blog a").eq(1).text("RICHARD EXON");
-		} else if (this.oldPath === "/lorimeakin") {
-			$("#founders-blog a").eq(2).text("LORI MEAKIN");
-		} else if (this.oldPath === "/nikupton") {
-			$("#founders-blog a").eq(3).text("NIK UPTON");
-		}
-	};
+	
 
-	this.founderClick = function (e) {
-		if ($(e.currentTarget).text() !== 'BACK') {
-			this.founderWord = $(e.currentTarget).text();
-		}
-		if ($(e.currentTarget).hasClass('active')) {
-			$(e.currentTarget).text(this.founderWord);
-			$('#founders-blog ul li a').removeClass('active');
-			this.address.title(this.originalTitle);
-			this.address.path('founders');
-			this.hideFoundersInfo();
-		} else {
-			this.address.title("Joint London - " + this.changeToTitle(this.founderWord));
-			this.address.path(this.removeSpace(this.founderWord));
-			$('#founders-blog ul li a').removeClass('active');
-			$(e.currentTarget).addClass('active');
-			$(e.currentTarget).text("BACK");
-			this.founderIndex = $('#founders-blog ul li').find('a').index(e.currentTarget);
-			this.displayFounder(e);
-			this.showFoundersInfo();
-		}
-	};
 
-	this.founderClicked = function (e, hash) {
-		if (e === undefined) {
-			if (this.animating === false) {
-				this.animating = true;
-				$("#founders-blog a").removeClass("active");
-				this.originalFounderPath = hash.substring(3);
-				if (this.originalFounderPath === "damoncollins") {
-					this.founderWord = "DAMON COLLINS";
-					this.founderIndex = 0;
-					this.displayFounder(e);
-				} else if (this.originalFounderPath === "richardexon") {
-					this.founderWord = "RICHARD EXON";
-					this.founderIndex = 1;
-					this.displayFounder(e);
-				} else if (this.originalFounderPath === "lorimeakin") {
-					this.founderWord = "LORI MEAKIN";
-					this.founderIndex = 2;
-					this.displayFounder(e);
-				} else if (this.originalFounderPath === "nikupton") {
-					this.founderWord = "NIK UPTON";
-					this.founderIndex = 3;
-					this.displayFounder(e);
-				}
-			}
-			if (this.isiDevice) {
-				$('#us-header span').text("BACK");
-				$('#us-nav a').eq(0).text("BACK");
-				this.lastFounder = this.founderWord;
-				this.founderCheck();
-				$('#founders-blog a').eq(this.founderIndex).text('BACK');
-			}
-			$("#founders-blog a").eq(this.founderIndex).addClass("active");
-		} else {
-			if (this.animating === false) {
-				this.animating = true;
-				if (this.isiDevice) {
-					this.founderCheck();
-					this.founderClick(e);
-				} else {
-					if (this.lastFounder) {
-						$('#founders-blog a').eq(this.founderIndex).text(this.lastFounder);
-						this.lastFounder = null;
-					}
-					this.founderClick(e);
-				}
-			}
-			e.preventDefault();
-			return false;
-		}
-	};
+	
 
 	// mouseovers
 	this.back = function (e) {
@@ -634,7 +554,7 @@ JOINT.MainView = function () {
 			}
 		} else if (this.hash === "#!/london" || this.hash === "#!/newyork" || this.hash === "#!/shanghai" || this.hash === "#!/saopaulo") {
 			if (this.oldPath === "" || this.oldPath === "/" || this.oldPath === undefined || this.oldPath === "/contact") {
-				this.originalWord = "CONTACT";
+			    this.originalWord = "企业无人化";
 				this.showLocations();
 				this.locationClicked(undefined, this.hash);
 				$('#contact-header span').addClass('active');
