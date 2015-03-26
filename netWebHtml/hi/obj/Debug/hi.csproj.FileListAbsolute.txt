@@ -8,3 +8,4 @@ D:\Project\Public\webhtml\netWebHtml\hi\bin\hi.pdb
 D:\Project\Public\webhtml\netWebHtml\hi\obj\Debug\hi.csprojResolveAssemblyReference.cache
 D:\Project\Public\webhtml\netWebHtml\hi\obj\Debug\hi.dll
 D:\Project\Public\webhtml\netWebHtml\hi\obj\Debug\hi.pdb
+D:\MyProject\githubp\webhtml\netWebHtml\hi\obj\Debug\hi.csprojResolveAssemblyReference.cache

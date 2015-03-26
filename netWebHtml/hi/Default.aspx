@@ -11,7 +11,7 @@
 				<div id="homepage">
 					<div id="top"></div>
 					<div id="bottom"></div>
-					<h1>JOINT</h1>
+					<h1>A.I.</h1>
 				</div>
 				<div id="contact">
 					<div id="contact-header">
@@ -25,6 +25,56 @@
 							<li><a href="http://auto.xieqj.cn" class="last">技术方案</a></li>
 						</ul>
 					</div>
+                    <div id="locations-container">
+                    <ul id="locations-list">
+                            <li class="location">
+                                <div class="location-container">
+                                <div class="location-header">
+                                    <h4>
+                                        远景</h4>
+                                </div>
+                                <div class="location-info">
+                                    <div class="address-holder">
+                                        远景描述                                 
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                            <li class="location">
+                                <div class="location-container">
+                                    <div class="location-header">
+                                        <h4>
+                                           无人化</h4>
+                                    </div>
+                                    <div class="location-info">
+                                       无人化描述
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="location">
+                                <div class="location-container">
+                                    <div class="location-header">
+                                        <h4>
+                                            减员增效</h4>
+                                    </div>
+                                    <div class="location-info">
+                                        减员增效描述
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="location">
+                                <div class="location-container last">
+                                    <div class="location-header">
+                                        <h4>
+                                            技术方案</h4>
+                                    </div>
+                                    <div class="location-info">
+                                        可实现方案简述
+                                    </div>                                  
+                                </div>
+                            </li>
+                    </ul>
+                </div>
 				</div>
 				<div id="us">
 					<div id="us-header">
