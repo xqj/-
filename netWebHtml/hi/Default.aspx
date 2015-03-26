@@ -3,6 +3,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="http://r.xieqj.cn/hi/default.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+			  <style>
+              body, html {
+	letter-spacing: -0.05em;
+}
+        </style>
+		<![endif]-->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="htmlBody" runat="server">
     <div id="viewport">
@@ -91,7 +98,7 @@
                         <li><a href="http://hi.xieqj.cn/Index.aspx/#project" target="_self">Projects</a></li>
                         <li class="last"><a href="http://blog.xieqj.cn" class="blog" target="_self">Blog</a></li>
                     </ul>
-                </div>                
+                </div>
             </div>
         </div>
     </div>
