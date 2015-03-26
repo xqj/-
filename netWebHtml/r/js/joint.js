@@ -312,57 +312,7 @@ JOINT.MainView = function () {
 		}
 	};
 
-	this.usNavClicked = function (e, hash) {
-		if (e === undefined) {
-			if (this.animating === false) {
-				this.animating = true;
-				$('#us-nav a').removeClass("active");
-				this.originalUsNavPath = hash.substring(3);
-				if (this.originalUsNavPath === "founders") {
-					this.usNavWord = "FOUNDERS";
-					this.usIndex = 0;
-					this.displayUsNav(e);
-					this.showFoundersBlog();
-					if (this.isiDevice) {
-						$('#us-header span').text("BACK");
-						$('#us-nav a').eq(0).text("BACK");
-						if (this.oldPath === "/damoncollins") {
-							$("#founders-blog a").eq(0).text("DAMON COLLINS");
-						} else if (this.oldPath === "/richardexon") {
-							$("#founders-blog a").eq(1).text("RICHARD EXON");
-						} else if (this.oldPath === "/lorimeakin") {
-							$("#founders-blog a").eq(2).text("LORI MEAKIN");
-						} else if (this.oldPath === "/nikupton") {
-							$("#founders-blog a").eq(3).text("NIK UPTON");
-						}
-					}
-				} else if (this.originalUsNavPath === "blog") {
-					this.usNavWord = "BLOG";
-					this.usIndex = 1;
-					this.displayUsNav(e);
-					this.showFoundersBlog();
-				}
-				$('#us-nav a').eq(this.usIndex).addClass("active");
-			}
-		} else {
-			if (this.animating === false) {
-				this.animating = true;
-				if (this.isiDevice) {
-					this.usIndex = $('#us-nav').find('a').index(e.currentTarget);
-					if (this.usIndex === 1) {
-						this.openBlog();
-						this.animating = false;
-					} else {
-						this.usNavClick(e);
-					}
-				} else {
-					this.usNavClick(e);
-				}
-			}
-			e.preventDefault();
-			return false;
-		}
-	};
+	
 
 	//founder blog clicked
 	this.showFoundersInfo = function () {
@@ -527,7 +477,7 @@ JOINT.MainView = function () {
 		$('#contact-header span').on('click', function (e) {scope.contactClicked(e); });
 		$('#us-header span').on('click', function (e) {scope.usClicked(e); });
 		$('#founders-blog ul li a').on('click', function (e) {scope.founderClicked(e); });
-		$('#us-nav ul li a').on('click', function (e) {scope.usNavClicked(e); });
+		//$('#us-nav ul li a').on('click', function (e) {scope.usNavClicked(e); });
 		$('#locations-nav-container a').on('click', function (e) {scope.locationClicked(e); });
 		if (!this.isiDevice) {
 			$('#locations-nav-container a').on('mouseover', function (e) {scope.back(e); });
@@ -538,8 +488,8 @@ JOINT.MainView = function () {
 			$('#contact-header span').on('mouseout', function (e) {scope.backOff(e); });
 			$('#us-header span').on('mouseover', function (e) {scope.back(e); });
 			$('#us-header span').on('mouseout', function (e) {scope.backOff(e); });
-			$('#us-nav ul li a').on('mouseover', function (e) {scope.back(e); });
-			$('#us-nav ul li a').on('mouseout', function (e) {scope.usNavBackOff(e); });
+			//$('#us-nav ul li a').on('mouseover', function (e) {scope.back(e); });
+			//$('#us-nav ul li a').on('mouseout', function (e) {scope.usNavBackOff(e); });
 		}
 	};
 
