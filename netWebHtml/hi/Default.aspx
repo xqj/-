@@ -2,7 +2,7 @@
     CodeBehind="Default.aspx.cs" Inherits="hi.Default1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="http://r.xieqj.cn/hi/default.css" rel="stylesheet" type="text/css" />
+    <link href="http://r.xieqj.cn/css/hi/default.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
 			  <style>
               body, html {
@@ -104,9 +104,9 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="jsWrap" runat="server">
-    <script src="http://r.xieqj.cn/js/jquery172.js"></script>
-    <script src="http://r.xieqj.cn/js/jquery.address.js"></script>
-    <script src="http://r.xieqj.cn/js/jquery.mousewheel.min.js"></script>
-    <script src="http://r.xieqj.cn/js/joint.js"></script>
-    <script src="http://r.xieqj.cn/js/ScrollBar.js"></script>
+    <script src="http://r.xieqj.cn/lib/jquery172.js" type="text/javascript"></script>
+    <script src="http://r.xieqj.cn/js/hi/jquery.address.js" type="text/javascript"></script>
+    <script src="http://r.xieqj.cn/js/hi/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script src="http://r.xieqj.cn/js/hi/joint.js" type="text/javascript"></script>
+    <script src="http://r.xieqj.cn/js/hi/ScrollBar.js" type="text/javascript"></script>
 </asp:Content>

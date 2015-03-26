@@ -1,0 +1,99 @@
+﻿body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background:#f5f5f5;
+}
+#viewWrap
+{  
+   height: 100%;
+	width: 100%;
+	overflow:hidden;
+}
+#me
+{
+     height: 100%;
+    width: 100%;
+    background-position: center center;
+    display: none;
+    background-image: url('http://r.xieqj.cn/imgs/hi/keyboard_back.png');
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-attachment: fixed;
+    opacity:0.8;
+	filter:"alpha(opacity=80)";
+    }
+#skill
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+#skillleft
+{
+    height: 100%;
+    width: 45%;
+    overflow: hidden;
+    background-color: #000066;
+}
+#topbutton
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 20px;
+    background-color: #FFFF00;
+}
+ #bottomButton
+{
+    margin-top:8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 20px;
+    background-color: #FFFF00;
+}
+#ulWrap
+{
+    height:90%;
+    width:100%;
+    overflow:hidden;
+    }
+#skillleft ul
+{
+ padding-left:10%;
+}
+#skillleft ul li
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-top:10px;
+    width: 80%;
+    height: 130px;
+    overflow: hidden;
+    background-color: #C0C0C0;
+}
+
+#skillleft ul li img
+{
+     float:left;
+     margin-left:10px;
+     margin-right:10px;
+     width:100px;
+     height:100px;
+}
+#skillright
+{
+    height: 100%;
+    width: 55%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+#project
+{
+     height: 100%;
+	width: 100%;
+    display:none;
+}
