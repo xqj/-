@@ -20,36 +20,31 @@
                             <img src="http://r.xieqj.cn/imgs/hi/ak47.jpg" />
                             <h6>
                                 技能</h6>
-                            <p>
-                                说明</p>
+                          
                         </li>
                          <li data-title="" data-content="" data-id="" id="Li1">
                             <img src="http://r.xieqj.cn/imgs/hi/m16.jpg" />
                             <h6>
                                 技能</h6>
-                            <p>
-                                说明</p>
+                         
                         </li>
                          <li data-title="" data-content="" data-id="" id="Li2">
                             <img src="http://r.xieqj.cn/imgs/hi/rpg.jpg" />
                             <h6>
                                 技能</h6>
-                            <p>
-                                说明</p>
+                           
                         </li>
                          <li data-title="" data-content="" data-id="" id="Li3">
                             <img src="http://r.xieqj.cn/imgs/hi/mortar.jpg" />
                             <h6>
                                 技能</h6>
-                            <p>
-                                说明</p>
+                           
                         </li>
                         <li data-title="" data-content="" data-id="" id="Li4">
                             <img src="http://r.xieqj.cn/imgs/hi/gun.jpg" />
                             <h6>
                                 技能</h6>
-                            <p>
-                                说明</p>
+                            
                         </li>
                     </ul>
                 </div>
