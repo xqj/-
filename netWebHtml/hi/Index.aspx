@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="pageBody" ContentPlaceHolderID="htmlBody" runat="server">
     <div id="viewWrap">
-    <div id="nextPage" current="1"><a href="###">NEXT</a></div>
+    <div id="nextPage" current="0"><a href="###">NEXT</a></div>
         <div id="me" class="pageContent">
            </div>
         <div id="skill" class="pageContent">
