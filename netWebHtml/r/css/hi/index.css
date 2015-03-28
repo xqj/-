@@ -43,7 +43,7 @@ body {
     background-attachment: fixed;
     opacity: 0.8;
     filter: "alpha(opacity=80)";
-    color: gray;
+    color: #101010;
     font-size: 20px;
     font-family: "Terminal Dosis", sans-serif;
     overflow: hidden;
@@ -84,7 +84,7 @@ a, a:visited {
 }
 
 .settings, nav {
-    color:white;
+    color: white;
     position: fixed;
     z-index: 9999999;
     bottom: 0;
@@ -147,13 +147,48 @@ nav {
     text-align: center;
     font-weight: bold;
 }
+
+    .demo p {
+         color:GrayText;
+        text-align: left;
+    }
+
+    .demo ul {
+        margin-top: 12px;
+    }
+
+    .demo li {
+         color:GrayText;
+        text-align: left;
+        margin-top: 8px;
+        width: 100%;
+        height: 90px;
+        font-size: 25px;
+    }
+
+        .demo li img {
+            margin-right: 16px;
+            border: outset 1px;
+            float: left;
+            width: 60px;
+            height: 60px;
+        }
+
 .description {
     top: 740px;
     left: 180px;
     width: 1024px;
     height: 720px;
 }
-
+    .description li a{
+     color:GrayText;
+     text-decoration:none;
+    }
+    .description li p{
+        margin-top:12px;
+     color:GrayText;
+    
+    }
 .syntax {
     top: 1510px;
     left: 430px;
@@ -161,6 +196,17 @@ nav {
     height: 720px;
 }
 
+    .syntax h1 {
+        text-align: left;
+    }
+
+    .syntax li {
+        text-align: left;
+        font-size: 22px;
+        margin-top: 12px;
+        color: GrayText;
+        font-weight: bolder;
+    }
 
 
 .highlight {
