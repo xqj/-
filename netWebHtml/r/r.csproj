@@ -62,10 +62,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="common\common.css" />
+    <Content Include="common\scrollpath.css" />
+    <Content Include="css\blog\index.css" />
+    <Content Include="css\blog\detail.css" />
+    <Content Include="css\blog\list.css" />
     <Content Include="hibottom.htm" />
     <Content Include="css\hi\default.css" />
     <Content Include="css\hi\index.css" />
     <Content Include="css\hi\Indexl.css" />
+    <Content Include="imgs\blog\black_back.png" />
     <Content Include="imgs\hi\ak47.jpg" />
     <Content Include="imgs\hi\bottom.jpg" />
     <Content Include="imgs\hi\gun.jpg" />
@@ -74,12 +79,14 @@
     <Content Include="imgs\hi\mortar.jpg" />
     <Content Include="imgs\hi\rpg.jpg" />
     <Content Include="imgs\hi\top.jpg" />
+    <Content Include="js\blog\index.js" />
+    <Content Include="js\blog\list.js" />
     <Content Include="js\hi\index.js" />
     <Content Include="js\hi\joint.js" />
     <Content Include="js\hi\jquery.address.js" />
-    <Content Include="js\hi\jquery.easing.js" />
+    <Content Include="lib\jquery.easing.js" />
     <Content Include="js\hi\jquery.mousewheel.min.js" />
-    <Content Include="js\hi\jquery.scrollpath.js" />
+    <Content Include="lib\jquery.scrollpath.js" />
     <Content Include="lib\jquery172.js" />
     <Content Include="lib\mobiledetect.js" />
     <Content Include="js\hi\ScrollBar.js" />
@@ -99,7 +106,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
