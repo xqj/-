@@ -1,64 +1,184 @@
-﻿body, html {
+﻿/* === CSS RESET === */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    background: #f5f5f5;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
-#viewWrap {
-    height: 100%;
-    width: 100%;
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* === End of CSS RESET === */
+
+body {
+    background-position: center center;
+    background-image: url('http://r.xieqj.cn/imgs/hi/keyboard_back.png');
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-attachment: fixed;
+    opacity: 0.8;
+    filter: "alpha(opacity=80)";
+    color: gray;
+    font-size: 20px;
+    font-family: "Terminal Dosis", sans-serif;
     overflow: hidden;
 }
 
-#nextPage {
+h1 {
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px dotted;
+    transition: color 0.2s;
+}
+
+    a:hover {
+        color: #AAA;
+    }
+
+    a:active {
+        color: lightblue;
+    }
+
+.big {
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0 transparent, 4px 4px 0 #101010;
+}
+
+.wrapper div {
     position: absolute;
-    overflow: hidden;
-    width: 120px;
-    height: 40px;
-    left: 48%;
-    right: auto;
-    top: 94%;
-    z-index: 99;
 }
 
-#me {
-    height: 100%;
-    width: 100%;
-    background-position: center center;
-    display: none;
-    background-image: url('http://r.xieqj.cn/imgs/hi/keyboard_back.png');
-    background-repeat: no-repeat;
-    background-color: #FFFFFF;
-    background-attachment: fixed;
-    opacity: 0.8;
-    filter: "alpha(opacity=80)";
-   
+.settings, nav {
+    color:white;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    background: rgba(10,10,10, 0.5);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
 }
 
-#skill {
-    display: none;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-position: center center;
-    background-image: url('http://r.xieqj.cn/imgs/hi/keyboard_back.png');
-    background-repeat: no-repeat;
-    background-color: #FFFFFF;
-    background-attachment: fixed;
-    opacity: 0.8;
-    filter: "alpha(opacity=80)";
+.settings {
+    right: 0;
+    padding: 10px 20px;
+    border-radius: 10px 0 0 0;
 }
-#project {
-    height: 100%;
-    width: 100%;
+
+    .settings a {
+        border: none;
+    }
+
+nav {
+    left: 0;
+    border-radius: 0 10px 0 0;
+}
+
+    nav li {
+        float: left;
+    }
+
+    nav a {
+        display: block;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        text-align: center;
+        transition: 0.25s;
+    }
+
+    nav li:last-child a {
+        border-radius: 0 10px 0 0;
+    }
+
+    nav a:hover {
+        background: rgba(15,15,15, 0.5);
+    }
+
+.sp-canvas {
     display: none;
-    background-position: center center;
-    background-image: url('http://r.xieqj.cn/imgs/hi/keyboard_back.png');
-    background-repeat: no-repeat;
-    background-color: #FFFFFF;
-    background-attachment: fixed;
-    opacity: 0.8;
-    filter: "alpha(opacity=80)";
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+}
+
+.demo {
+    width: 1024px;
+    height: 720px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.description {
+    top: 740px;
+    left: 180px;
+    width: 1024px;
+    height: 720px;
+}
+
+.syntax {
+    top: 1510px;
+    left: 430px;
+    width: 1024px;
+    height: 720px;
+}
+
+
+
+.highlight {
+    animation: highlight 0.2s alternate 6;
+}
+
+@keyframes point-down {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 5px;
+    }
+}
+
+@keyframes highlight {
+    to {
+        background: lightblue;
+    }
 }

@@ -66,6 +66,7 @@
     <Content Include="css\blog\index.css" />
     <Content Include="css\blog\detail.css" />
     <Content Include="css\blog\list.css" />
+    <Content Include="css\robot\default.css" />
     <Content Include="hibottom.htm" />
     <Content Include="css\hi\default.css" />
     <Content Include="css\hi\index.css" />
@@ -79,6 +80,7 @@
     <Content Include="imgs\hi\mortar.jpg" />
     <Content Include="imgs\hi\rpg.jpg" />
     <Content Include="imgs\hi\top.jpg" />
+    <Content Include="imgs\robot\robot_think.jpg" />
     <Content Include="js\blog\index.js" />
     <Content Include="js\blog\list.js" />
     <Content Include="js\hi\index.js" />

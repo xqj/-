@@ -53,7 +53,7 @@ JOINT.MainView = function () {
 		if (e === undefined) {
 			if (this.animating === false) {
 				this.animating = true;
-				this.address.title(this.originalTitle);
+				////this.address.title(this.originalTitle);
 				this.originalWordPath = hash.substring(3);
 				if (this.originalWordPath === "contact") {
 					this.originalWord = "企业无人化";
@@ -77,7 +77,7 @@ JOINT.MainView = function () {
 			if (this.animating === false) {
 				this.animating = true;
 				this.originalWord = $(e.currentTarget).text();
-				this.address.title(this.originalTitle);
+				//this.address.title(this.originalTitle);
 				if ($(e.currentTarget).hasClass('active')) {
 					this.address.path('');
 					$('#contact-header span').removeClass('active').text("企业无人化");
@@ -227,7 +227,7 @@ JOINT.MainView = function () {
 	this.usClicked = function (e, hash) {
 		if (e === undefined) {
 			if (this.animating === false) {
-				this.address.title("Joint London - About Us");
+				//this.address.title("Hsieh Ching Jing - About Us");
 				this.animating = true;
 				this.originalWordPath = hash.substring(3);
 				if (this.originalWordPath === "us") {
@@ -242,7 +242,7 @@ JOINT.MainView = function () {
 		} else {
 			if (this.animating === false) {
 				this.animating = true;
-				this.address.title("Joint London - About Us");
+				//this.address.title("Hsieh Ching Jing - About Us");
 				this.originalWord = $(e.currentTarget).text();
 				if ($(e.currentTarget).hasClass('active')) {
 					this.address.path('');
@@ -276,11 +276,11 @@ JOINT.MainView = function () {
 
 	this.displayUsNav = function () {
 		if ($('#founders-nav').css('display') === "none") {
-			this.address.title("Joint London - " + this.changeToTitle(this.usNavWord));
+			//this.address.title("Hsieh Ching Jing - " + this.changeToTitle(this.usNavWord));
 			$('#founders-blog').css({'top': -(this.usIndex * this.browserHeight)});
 			this.animating = false;
 		} else if ($('#founders-nav').css('display') === "block") {
-			this.address.title("Joint London - " + this.changeToTitle(this.usNavWord));
+			//this.address.title("Hsieh Ching Jing - " + this.changeToTitle(this.usNavWord));
 			$('#founders-blog').animate({'top': -(this.usIndex * this.browserHeight)}, 500, function () {scope.animating = false; });
 		}
 	};
@@ -295,14 +295,14 @@ JOINT.MainView = function () {
 			this.usNavWord = $(e.currentTarget).text();
 		}
 		if ($(e.currentTarget).hasClass('active')) {
-			this.address.title("Joint London - About Us");
+			//this.address.title("Hsieh Ching Jing - About Us");
 			$(e.currentTarget).text(this.usNavWord);
 			this.address.path('us');
 			$('#us-nav a').removeClass('active');
 			this.hideFoundersBlog();
 		} else {
 			$('#us-nav a').removeClass('active');
-			this.address.title("Joint London - Founders");
+			//this.address.title("Hsieh Ching Jing - Founders");
 			this.address.path(this.usNavWord.toLowerCase());
 			$(e.currentTarget).addClass('active');
 			$(e.currentTarget).text("BACK");
@@ -384,7 +384,7 @@ JOINT.MainView = function () {
 	this.displayFounder = function () {
 		var scope = this;
 		if ($('#founders-container').css('display') === "none") {
-			this.address.title("Joint London - " + this.changeToTitle(this.founderWord));
+			//this.address.title("Hsieh Ching Jing - " + this.changeToTitle(this.founderWord));
 			$('#founders-container').show();
 			$('#founders-list').css({'top': -(this.founderIndex * this.browserHeight)});
 			$('.scrollbar').show();
@@ -394,7 +394,7 @@ JOINT.MainView = function () {
 			this.animating = false;
 			this.showFoundersInfo();
 		} else if ($('#founders-container').css('display') === "block") {
-			this.address.title("Joint London - " + this.changeToTitle(this.founderWord));
+			//this.address.title("Hsieh Ching Jing - " + this.changeToTitle(this.founderWord));
 			$('.founder-blurb-container').each(function (index, element) {
 				scope.scrollBar[index].update();
 			});
@@ -423,11 +423,11 @@ JOINT.MainView = function () {
 		if ($(e.currentTarget).hasClass('active')) {
 			$(e.currentTarget).text(this.founderWord);
 			$('#founders-blog ul li a').removeClass('active');
-			this.address.title(this.originalTitle);
+			//this.address.title(this.originalTitle);
 			this.address.path('founders');
 			this.hideFoundersInfo();
 		} else {
-			this.address.title("Joint London - " + this.changeToTitle(this.founderWord));
+			//this.address.title("Hsieh Ching Jing - " + this.changeToTitle(this.founderWord));
 			this.address.path(this.removeSpace(this.founderWord));
 			$('#founders-blog ul li a').removeClass('active');
 			$(e.currentTarget).addClass('active');
@@ -648,7 +648,7 @@ JOINT.MainView = function () {
 	this.checkLocation = function () {
 		this.hash = window.location.hash;
 		if (this.hash === "/" || this.hash === "" || this.hash === "!") {
-			this.address.title(this.originalTitle);
+			//this.address.title(this.originalTitle);
 			if (this.oldPath === "/contact") {
 				this.hideLocations();
 			} else if (this.oldPath === "/us") {
@@ -666,7 +666,7 @@ JOINT.MainView = function () {
 				}
 			}
 		} else if (this.hash === '#!/contact') {
-			this.address.title("Joint London - Contact");
+			//this.address.title("Hsieh Ching Jing - Contact");
 			if (this.oldPath === "" || this.oldPath === "/" || this.oldPath === undefined || this.oldPath === "/contact") {
 				this.contactClicked(undefined, this.hash);
 			} else if (this.oldPath === "/london" || this.oldPath === "/newyork" || this.oldPath === "/shanghai" || this.oldPath === "/saopaulo") {
@@ -745,7 +745,7 @@ JOINT.MainView = function () {
 		this.checkForiDevice();
 		this.getBrowserSize();
 		this.originalTitle = $('title').text();
-		this.address = $.address;
+		//this.address = $.address;
 		this.checkBrowserSize();
 		this.createScrollBars(that);
 		this.checkLocation();
