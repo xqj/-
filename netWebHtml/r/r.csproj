@@ -77,9 +77,11 @@
     <Content Include="js\hi\index.js" />
     <Content Include="js\hi\joint.js" />
     <Content Include="js\hi\jquery.address.js" />
+    <Content Include="js\hi\jquery.easing.js" />
     <Content Include="js\hi\jquery.mousewheel.min.js" />
+    <Content Include="js\hi\jquery.scrollpath.js" />
     <Content Include="lib\jquery172.js" />
-    <Content Include="js\hi\mobiledetect.js" />
+    <Content Include="lib\mobiledetect.js" />
     <Content Include="js\hi\ScrollBar.js" />
     <Content Include="lib\jquery-1.11.2.js" />
     <Content Include="lib\jquery-1.11.2.min.js" />
