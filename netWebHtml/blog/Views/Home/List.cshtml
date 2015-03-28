@@ -1,26 +1,12 @@
 ﻿@{
     ViewBag.Title = "List";
-    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Layout = "~/Views/Shared/_LayoutPageList.cshtml";
 }
 
 @section head{
 
     <link href="http://r.xieqj.cn/css/blog/list.css" rel="stylesheet" />
 }
-<nav>
-    <ul>
-        <li><a href="@Url.Action("list")">操作手册</a></li>
-        <li><a href="@Url.Action("list")">凝点系列</a></li>
-        <li><a href="@Url.Action("list")">日积月累</a></li>
-        <li><a href="@Url.Action("list")">他山石</a></li>
-        <li><a href="@Url.Action("list")" class="a1">项目</a></li>
-        <li><a href="@Url.Action("list")" class="a1">我</a></li>
-    </ul>
-</nav>
-<div class="settings">
-    <a href="http://www.miitbeian.gov.cn" style=" text-decoration:none; color:Gray;">京ICP备15011783号-1</a>
-    邮箱:<a target="_blank" href="mailto:webadmin@war2045.com" style="text-decoration:none;color:Gray;">webadmin@war2045.com</a>
-</div>
 <div class="wrapper">
     <div class="demo">
         <a href="@Url.Action("list")" title="点击查看更多">
