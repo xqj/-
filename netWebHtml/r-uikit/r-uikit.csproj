@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,11 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Jquery\jquery-3.2.1.min.js" />
     <Content Include="packages.config" />
     <Content Include="uikit2250\fonts\fontawesome-webfont.ttf" />
     <Content Include="uikit2250\fonts\fontawesome-webfont.woff" />
     <Content Include="uikit2250\fonts\fontawesome-webfont.woff2" />
     <Content Include="uikit2250\fonts\FontAwesome.otf" />
+    <Content Include="vue240\vue.min.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -290,6 +293,7 @@
     <Content Include="uikit2250\js\core\utility.min.js" />
     <Content Include="uikit2250\js\uikit.js" />
     <Content Include="uikit2250\js\uikit.min.js" />
+    <Content Include="vue240\vue.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

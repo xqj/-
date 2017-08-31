@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "r-uikit", "r-uikit\r-uikit.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uikitFrame", "uikitFrame\uikitFrame.csproj", "{8729D3C7-1B6E-4AA3-8DD3-0E601E44CB71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "default", "default\default.csproj", "{458E800E-432D-43F8-A38C-C55186B3CA1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8729D3C7-1B6E-4AA3-8DD3-0E601E44CB71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8729D3C7-1B6E-4AA3-8DD3-0E601E44CB71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8729D3C7-1B6E-4AA3-8DD3-0E601E44CB71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
