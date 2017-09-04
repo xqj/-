@@ -11,6 +11,8 @@
 	href="http://r.xieqj.cn/uikit/uikit2250/css/components/notify.css">
 <script src="http://r.xieqj.cn/uikit/Jquery/jquery-3.2.1.min.js"></script>
 <script src="http://r.xieqj.cn/uikit/uikit2250/js/uikit.min.js"></script>
+<script
+	src="http://r.xieqj.cn/uikit/uikit2250/js/components/pagination.js"></script>
 <script src="http://r.xieqj.cn/uikit/uikit2250/js/components/notify.js"></script>
 </head>
 
@@ -51,13 +53,68 @@
 				</div></li>
 		</ul>
 	</nav>
-	<div class="uk-width-1-1">
-	
+	<div id="searchcontainer" class="uk-width-1-1">
+		<form class="uk-form">
+			<fieldset data-uk-margin>
+				<legend>search</legend>
+				<div class="uk-form-row">
+					<input type="text" placeholder="search key">
+				</div>
+				<div class="uk-form-row">
+					<lable>select</lable>
+					<select>
+						<option>select1</option>
+						<option>select2</option>
+					</select>
+					<button class="uk-button">Button</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div id="datacontainer" class="uk-width-1-1 uk-overflow-container">
+		<table class="uk-table uk-table-hover uk-table-striped">
+			<caption>XXXData list</caption>
+			<thead>
+				<tr id="headercontainer">
+					<th>header 1</th>
+					<th>header 2</th>
+					<th>header 3</th>
+					<th>header 4</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="4"><ul id="pager" class="uk-pagination"></ul></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>col 1</td>
+					<td>col 2</td>
+					<td>col 3</td>
+					<td>col 4</td>
+				</tr>
+				<tr>
+					<td>r2 col 1</td>
+					<td>r2 col 2</td>
+					<td>r2 col 3</td>
+					<td>r2 col 4</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 	<div class="uk-width-1-1">
 		<div class="uk-width-medium-1-5 uk-container-center">about us</div>
 		<div class="uk-width-medium-1-5 uk-container-center">beian</div>
 	</div>
-	
+	<script>
+$(document).ready(function(){
+	 var pagination =
+	UIkit.pagination($('#pager'), {items:21,itemsOnPage:10});
+	 $('#pager').on('select.uk.pagination', function(e, pageIndex){
+		   //TODO get pager datalist
+		});
+});
+</script>
 </body>
 </html>
