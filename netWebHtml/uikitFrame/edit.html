@@ -4,17 +4,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>frame</title>
+<title>edit</title>
 <link rel="stylesheet"
 	href="http://r.xieqj.cn/uikit/uikit2250/css/uikit.min.css">
 <link rel="stylesheet"
 	href="http://r.xieqj.cn/uikit/uikit2250/css/components/notify.css">
+<link rel="stylesheet"
+	href="http://r.xieqj.cn/uikit/uikit2250/css/components/datepicker.css">
+<link rel="stylesheet"
+	href="http://r.xieqj.cn/uikit/uikit2250/css/components/htmleditor.css">
+<link rel="stylesheet"
+	href="http://r.xieqj.cn/uikit/codemirror/css/codemirror.css">
+<link rel="stylesheet"
+	href="http://r.xieqj.cn/uikit/codemirror/css/show-hint.css">
 <script src="http://r.xieqj.cn/uikit/Jquery/jquery-3.2.1.min.js"></script>
 <script src="http://r.xieqj.cn/uikit/uikit2250/js/uikit.min.js"></script>
-<script
-	src="http://r.xieqj.cn/uikit/uikit2250/js/components/pagination.js"></script>
 <script src="http://r.xieqj.cn/uikit/uikit2250/js/components/notify.js"></script>
-
+<script
+	src="http://r.xieqj.cn/uikit/uikit2250/js/components/datepicker.js"></script>
+<script
+	src="http://r.xieqj.cn/uikit/codemirror/js/codemirror.js"></script>
+<script src="http://r.xieqj.cn/uikit/marked/marked.min.js"></script>
+<script
+	src="http://r.xieqj.cn/uikit/uikit2250/js/components/htmleditor.js"></script>
 </head>
 
 <body>
@@ -25,16 +37,13 @@
 					src="http://r.xieqj.cn/uikit/logo/logo.jpg"
 					style="width: 88px; height: 31px;"></a></li>
 		</ul>
-
 		<div class="uk-navbar-flip">
 			<nav class="uk-navbar">
-
 				<ul class="uk-navbar-nav">
 					<li id="nameBtn"><a href="">person name</a></li>
 					<li id="settingBtn"><a href="">setting</a></li>
 					<li id="logouBtn"><a href="">logout</a></li>
 				</ul>
-
 			</nav>
 		</div>
 	</nav>
@@ -54,70 +63,43 @@
 				</div></li>
 		</ul>
 	</nav>
-	<div id="searchcontainer" class="uk-width-1-1">
-		<form class="uk-form">
-			<fieldset data-uk-margin>
-				<legend>search</legend>
+	<div id="datacontainer" class="uk-width-1-1">
+		<div class="uk-width-medium-1-5 uk-container-center">
+			<form class="uk-form">
+				<legend>edit info</legend>
 				<div class="uk-form-row">
-					<input type="text" placeholder="search key">
+					<input type="text" data-uk-datepicker="{format:'DD.MM.YYYY'}">
 				</div>
 				<div class="uk-form-row">
-					<lable>select</lable>
-					<select>
-						<option>select1</option>
-						<option>select2</option>
+					<input type="text" placeholder="填写">
+				</div>
+				<div class="uk-form-row">
+					<input type="text" placeholder="警告" class="uk-form-danger">
+				</div>
+				<div class="uk-form-row">
+					<input type="text" placeholder="验证通过" class="uk-form-success">
+				</div>
+				<div class="uk-form-row">
+					<textarea data-uk-htmleditor="{maxsplitsize:600, markdown:true}"></textarea>
+				</div>
+				<div class="uk-form-row">
+					<label>选择<select>
+							<option>item1</option>
+							<option>item2</option>
 					</select>
-					<button class="uk-button">Button</button>
+					</label>
 				</div>
-			</fieldset>
-		</form>
-	</div>
-	<div id="datacontainer" class="uk-width-1-1 uk-overflow-container">
-		<table class="uk-table uk-table-hover uk-table-striped">
-			<caption>XXXData list</caption>
-			<thead>
-				<tr id="headercontainer">
-					<th>header 1</th>
-					<th>header 2</th>
-					<th>header 3</th>
-					<th>header 4</th>
-				</tr>
-			</thead>
-			<tfoot>
-				<tr>
-					<td colspan="4"><ul id="pager" class="uk-pagination"></ul></td>
-				</tr>
-			</tfoot>
-			<tbody>
-				<tr>
-					<td>col 1</td>
-					<td>col 2</td>
-					<td>col 3</td>
-					<td>col 4</td>
-				</tr>
-				<tr>
-					<td>r2 col 1</td>
-					<td>r2 col 2</td>
-					<td>r2 col 3</td>
-					<td>r2 col 4</td>
-				</tr>
-			</tbody>
-		</table>
+				<div class="uk-form-row">
+					<label>选定<input type="checkbox">
+					</label>
+				</div>
+
+			</form>
+		</div>
 	</div>
 	<div class="uk-width-1-1">
 		<div class="uk-width-medium-1-5 uk-container-center">about us</div>
 		<div class="uk-width-medium-1-5 uk-container-center">beian</div>
-	</div>
-	<script>
-		$(document).ready(function() {
-			var pagination = UIkit.pagination($('#pager'), {
-				items : 21,
-				itemsOnPage : 10
-			});
-			$('#pager').on('select.uk.pagination', function(e, pageIndex) {
-				//TODO get pager datalist
-			});
-		});
-	</script>
+	</div>	
 </body>
 </html>
