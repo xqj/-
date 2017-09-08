@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="datalist.html" />
+    <Content Include="edit.html" />
+    <Content Include="frame.html" />
     <Content Include="login.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
