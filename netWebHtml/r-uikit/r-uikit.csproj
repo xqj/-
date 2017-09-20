@@ -73,6 +73,7 @@
     <Content Include="uikit2250\fonts\fontawesome-webfont.woff2" />
     <Content Include="uikit2250\fonts\FontAwesome.otf" />
     <Content Include="vue240\vue.min.js" />
+    <Content Include="vue240\axios.min.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
