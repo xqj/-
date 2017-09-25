@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uikitFrame", "uikitFrame\ui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "default", "default\default.csproj", "{458E800E-432D-43F8-A38C-C55186B3CA1B}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "admindemo", "admindemo\admindemo.njsproj", "{001AFB12-0896-4953-A3AC-1F1AA3F44487}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{458E800E-432D-43F8-A38C-C55186B3CA1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{001AFB12-0896-4953-A3AC-1F1AA3F44487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{001AFB12-0896-4953-A3AC-1F1AA3F44487}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{001AFB12-0896-4953-A3AC-1F1AA3F44487}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{001AFB12-0896-4953-A3AC-1F1AA3F44487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
